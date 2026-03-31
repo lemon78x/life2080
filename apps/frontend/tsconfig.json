@@ -1,0 +1,18 @@
+{
+  "extends": "@life2080/typescript-config/next.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "../../packages/typescript-config/src",
+    "../../packages/typescript-config/next-env.d.ts",
+    "../../packages/typescript-config/**/*.ts",
+    "../../packages/typescript-config/**/*.tsx",
+    ".next/types/**/*.ts"
+  ]
+}

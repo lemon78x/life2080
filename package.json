@@ -1,0 +1,27 @@
+{
+  "name": "life2080-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Life 2080 Web Services Monorepo",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@9.12.0",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "glob": "^13.0.0",
+      "rimraf": "^6.0.0",
+      "inflight": "^1.0.6"
+    }
+  }
+}
